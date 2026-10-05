@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 30px;
+    color: #172033;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.simulation-label {
+    background: #fff3cd;
+    color: #856404;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+.ticket {
+    background: white;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: #14213d;
+    color: white;
+}
+
+.ticket-header h1 {
+    font-size: 25px;
+}
+
+.ticket-header p {
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.flight-number {
+    text-align: right;
+}
+
+.flight-number span,
+.ticket-details span,
+.tracking-section span,
+.stats span {
+    display: block;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.flight-number span {
+    color: #bfc9da;
+}
+
+.flight-number strong {
+    font-size: 25px;
+}
+
+.route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.airport small {
+    color: #777;
+}
+
+.airport h2 {
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+.airport p {
+    color: #666;
+}
+
+.plane-line {
+    font-size: 30px;
+}
+
+.ticket-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 25px;
+    border-top: 1px dashed #ccc;
+}
+
+.ticket-details strong,
+.tracking-section strong,
+.stats strong {
+    font-size: 15px;
+}
+
+.tracking-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background: #f6f8fb;
+}
+
+.status strong {
+    color: green;
+}
+
+.live-info {
+    background: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.live-info h2 {
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stats > div {
+    padding: 15px;
+    background: #f5f7fa;
+    border-radius: 8px;
+}
+
+#map {
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .route {
+        padding: 20px;
+    }
+
+    .ticket-details {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

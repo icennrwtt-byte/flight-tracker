@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tracker Simulation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="simulation-label">
+            FLIGHT TRACKING SIMULATION — VALID
+        </div>
+
+        <div class="ticket">
+
+            <div class="ticket-header">
+                <div>
+                    <h1>SKYLINE AIR</h1>
+                    <p>Electronic Flight Ticket</p>
+                </div>
+
+                <div class="flight-number">
+                    <span>FLIGHT</span>
+                    <strong>SL247</strong>
+                </div>
+            </div>
+
+            <div class="route">
+
+                <div class="airport">
+                    <small>FROM</small>
+                    <h2>ORD</h2>
+                    <p>Illinois, USA</p>
+                </div>
+
+                <div class="plane-line">
+                    ✈
+                </div>
+
+                <div class="airport">
+                    <small>TO</small>
+                    <h2>PLN</h2>
+                    <p>Pellston, USA</p>
+                </div>
+
+            </div>
+
+            <div class="ticket-details">
+
+                <div>
+                    <span>PASSENGER NAME</span>
+                    <strong>ANN J PRUETT</strong>
+                </div>
+
+                <div>
+                    <span>PASSENGER NO.</span>
+                    <strong>PAX-10482</strong>
+                </div>
+
+                <div>
+                    <span>DEPARTURE</span>
+                    <strong>05 OCT 2026 — 22:30</strong>
+                </div>
+
+                <div>
+                    <span>ARRIVAL</span>
+                    <strong>06 OCT 2026 — 06:15</strong>
+                </div>
+
+            </div>
+
+            <div class="tracking-section">
+
+                <div>
+                    <span>LIVE TRACKING NUMBER</span>
+                    <strong>SL247-LIVE</strong>
+                </div>
+
+                <div class="status">
+                    <span>STATUS</span>
+                    <strong id="status">AWAITING PAYMENT</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="live-info">
+
+            <h2>Live Flight Information</h2>
+
+            <div class="stats">
+
+                <div>
+                    <span>ALTITUDE</span>
+                    <strong id="altitude">35,000 ft</strong>
+                </div>
+
+                <div>
+                    <span>SPEED</span>
+                    <strong id="speed">510 mph</strong>
+                </div>
+
+                <div>
+                    <span>PROGRESS</span>
+                    <strong id="progress">0%</strong>
+                </div>
+
+                <div>
+                    <span>TIME REMAINING</span>
+                    <strong id="timeRemaining">07:45</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="map"></div>
+
+    </div>
+
+
+    <!-- Leaflet JavaScript -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
