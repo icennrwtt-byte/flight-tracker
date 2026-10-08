@@ -1,8 +1,8 @@
-// Accra
-const start = [5.6037, -0.1870];
+// Ohio
+const start = [39.9612, -82.9988];
 
-// London
-const destination = [51.4700, -0.4543];
+// South Dakota
+const destination = [43.5476, -96.7294];
 
 // Create map
 const map = L.map("map").setView(start, 4);
